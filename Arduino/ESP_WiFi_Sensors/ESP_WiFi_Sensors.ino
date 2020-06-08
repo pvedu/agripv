@@ -14,8 +14,8 @@
 #define DHTTYPE DHT22   // DHT 22  
 
 // Replace with your network credentials
-const char* ssid     = "EAT";
-const char* password = "ginger1249";
+const char* ssid     = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
 
 // Set web server port number to 80
 WiFiServer server(80);
