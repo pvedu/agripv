@@ -137,7 +137,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 <p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image21.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 
 The Arduino IDE is now installed, and we now add the code libraries for talking to the ESP32.
@@ -161,7 +161,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 <p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image22.png "image_tooltip")
+![alt_text](images/image55.png "image_tooltip")
 
 
 
@@ -173,7 +173,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 <p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image23.png "image_tooltip")
+![alt_text](images/image50.png "image_tooltip")
 
 
 
@@ -211,7 +211,7 @@ The software installation is now complete. To test it we connect to the ESP32, e
 <p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image25.png "image_tooltip")
+![alt_text](images/image20.png "image_tooltip")
 
 
 If the ESP board is not showing up, try to install the driver from the following location:
@@ -232,7 +232,7 @@ To test the communications link, we write and upload a simple program that makes
 <p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image26.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 
 
@@ -273,7 +273,7 @@ To test the communications link, we write and upload a simple program that makes
 <p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image28.png "image_tooltip")
+![alt_text](images/image19.png "image_tooltip")
 
 
 The next step is a bit tricky.
@@ -307,7 +307,7 @@ appears and there is a blue flashing light on the ESP32.
 <p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image32.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image32.png "image_tooltip")
+![alt_text](images/image34.png "image_tooltip")
 
 
 
@@ -332,7 +332,7 @@ At the moment, the ESP32 is powered by the USB connection. A regulator inside th
 <p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image33.png "image_tooltip")
+![alt_text](images/image22.png "image_tooltip")
 
 
 [Figure 1](#figur_wiring)_: Board wiring diagram. The components and wires go on the top of the board and all the soldering is done from the bottom. There are more details on the microprocessor and internal board wiring below._
@@ -342,7 +342,7 @@ At the moment, the ESP32 is powered by the USB connection. A regulator inside th
 <p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image34.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image34.png "image_tooltip")
+![alt_text](images/image16.png "image_tooltip")
 
 
 [Figure 2](#figur_boardrear)_; View of the board from the bottom. There should be solder joints at the black dots._
@@ -362,7 +362,7 @@ Cut lengths of wire slightly longer than shown above. Remove 3 - 5 mm of insulat
 <p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image35.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image35.jpg "image_tooltip")
+![alt_text](images/image65.jpg "image_tooltip")
 
 
 [Figure 3](#figur_bentwire)_: Wire ready to insert in the PCB._
@@ -387,13 +387,13 @@ There is a 10k resistor with the DHT22. Bend the legs of the resistor over and i
 <p id="gdcalert37" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image37.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert38">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image37.png "image_tooltip")
+![alt_text](images/image25.png "image_tooltip")
 
 
 <p id="gdcalert38" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image38.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert39">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image38.jpg "image_tooltip")
+![alt_text](images/image60.jpg "image_tooltip")
 
 
 [Figure 4](#figur_10kresistor)_: The colors show it is a 10k resistor. Snip off the excess leads after soldering into the board._
