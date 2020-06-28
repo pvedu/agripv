@@ -1,31 +1,5 @@
 
 
-<!-- Copy and paste the converted output. -->
-
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 24.028 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β28
-* Sun Jun 28 2020 12:10:41 GMT-0700 (PDT)
-* Source doc: Agrivoltaic Data Acquisition
-* Tables are currently converted to HTML tables.
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-
 
 # Agrivoltaic Data Acquisition
 
@@ -67,7 +41,7 @@ Additional items:
 
 
 
-*   Small screwdriver for the terminal blocks. [Home Depot has one for &lt; $2](https://www.homedepot.com/p/Stanley-4-Way-Pen-Screw-Driver-STHT60082/311369938).
+* Small screwdriver for the terminal blocks. [Home Depot has one for &lt; $2](https://www.homedepot.com/p/Stanley-4-Way-Pen-Screw-Driver-STHT60082/311369938).
 *   Computer with administrator right for installing the Arduino software. 
 *   Clips to hold the parts while soldering.
 *   Side cutters to trim wires. Nail clippers also work great!
@@ -75,10 +49,10 @@ Additional items:
 *   Multimeter
 
 
-## Guides: {#guides}
+## Guides:
 
 
-### Wire Stripping {#wire-stripping}
+### Wire Stripping
 
 The wirecutters in your kit have a bolt that slides up and down. Adjust the bolt for each wire size and tighten it. Get a feel for the correct pressure by practicing on old wires such as broken USB cables or telephone wire.
 
@@ -87,7 +61,7 @@ Wire stripping: [https://www.instructables.com/id/Use-scissors-to-strip-wires!/]
 I find wire stripping with a knife easier than the strippers. Use a sharp craft knife. [https://www.instructables.com/id/How-to-Strip-Wire-Without-A-Wire-Stripper/](https://www.instructables.com/id/How-to-Strip-Wire-Without-A-Wire-Stripper/) 
 
 
-### Soldering {#soldering}
+### Soldering
 
 There are many guides on the web and Youtube, so I will be brief here. A good start is: [https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering/all](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering/all) 
 
@@ -107,7 +81,7 @@ Most connections are soldered as it is much more reliable than using a prototypi
 
 We use the C/C++  language the Arduino IDE to write code to tell the ESP32 how and when to take measurements and what to do with the data. The **C/C++** language produces fast code with a small size, so it uses less storage space and is ideal for microcontrollers. It is popular, so there is lots of code already out there. We can download a library to talk to the sensors without having to write it all ourselves. It is hard to learn, but you won't need to do much actual programming. Just compile and upload.
 
-An **IDE **(integrated development environment) integrates several functions. It provides the editor where we write the actual code and format it, so it is easier to read. It manages libraries (pre-written code) to include with our code in the right way. The IDE compiles (translates) C/C++ into machine code instructions for the ESP32 and finally uploads (transfers) the machine code to the ESP32. There are many IDEs, but we use the **Arduino IDE** as it is free and simpler to install. The default language is C/C++
+An **IDE** (integrated development environment) integrates several functions. It provides the editor where we write the actual code and format it, so it is easier to read. It manages libraries (pre-written code) to include with our code in the right way. The IDE compiles (translates) C/C++ into machine code instructions for the ESP32 and finally uploads (transfers) the machine code to the ESP32. There are many IDEs, but we use the **Arduino IDE** as it is free and simpler to install. The default language is C/C++
 
 
 ### Installing the Arduino IDE {#installing-the-arduino-ide}
@@ -195,7 +169,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 
 
 
-*   Click **Tools **→ **Board **→ **Boards Manager**.
+*   Click **Tools** → **Board **→  **Boards Manager**.
 
 
 
