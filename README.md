@@ -111,7 +111,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 <p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image19.png "image_tooltip")
+![alt_text](images/image33.png "image_tooltip")
 
 
 
@@ -125,7 +125,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 <p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image20.png "image_tooltip")
+![alt_text](images/image23.png "image_tooltip")
 
 
 
