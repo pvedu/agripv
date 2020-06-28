@@ -1,6 +1,3 @@
-
-
-
 # Agrivoltaic Data Acquisition
 
 ## Overview
@@ -79,7 +76,7 @@ Most connections are soldered as it is much more reliable than using a prototypi
 
 ## Programming Environment {#programming-environment}
 
-We use the C/C++  language the Arduino IDE to write code to tell the ESP32 how and when to take measurements and what to do with the data. The **C/C++** language produces fast code with a small size, so it uses less storage space and is ideal for microcontrollers. It is popular, so there is lots of code already out there. We can download a library to talk to the sensors without having to write it all ourselves. It is hard to learn, but you won't need to do much actual programming. Just compile and upload.
+We use the C/C++  language in the Arduino IDE to write code to tell the ESP32 how and when to take measurements and what to do with the data. The **C/C++** language produces fast code with a small size, so it uses less storage space and is ideal for microcontrollers. It is popular, so there is lots of code already out there. We can download a library to talk to the sensors without having to write it all ourselves. It is hard to learn, but you won't need to do much actual programming. Just compile and upload.
 
 An **IDE** (integrated development environment) integrates several functions. It provides the editor where we write the actual code and format it, so it is easier to read. It manages libraries (pre-written code) to include with our code in the right way. The IDE compiles (translates) C/C++ into machine code instructions for the ESP32 and finally uploads (transfers) the machine code to the ESP32. There are many IDEs, but we use the **Arduino IDE** as it is free and simpler to install. The default language is C/C++
 
@@ -97,7 +94,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 
 
 
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
 
 
 ![alt_text](images/image18.png "image_tooltip")
@@ -111,7 +108,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 
  
 
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image19.png "image_tooltip")
@@ -125,7 +122,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 
 
 
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image20.png "image_tooltip")
@@ -137,7 +134,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 
 
 
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image21.png "image_tooltip")
