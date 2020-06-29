@@ -97,7 +97,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 
 
 
-![alt_text](images/image18.png "image_tooltip")
+![alt_text](images/image40.png "image_tooltip")
 
 
 
@@ -408,7 +408,7 @@ The terminal blocks go in the locations indicated. Looking from the bottom, each
 <p id="gdcalert39" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image39.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert40">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image39.jpg "image_tooltip")
+![alt_text](images/image53.jpg "image_tooltip")
 
 
 (red wire at the top is incorrect!)
@@ -425,60 +425,13 @@ The ESP32 board is the hardest to solder, so we do it at the end. For now, just 
 
 _Table 2: Pins in use on the ESP32_
 
-
-<table>
-  <tr>
-   <td>Location
-   </td>
-   <td>Pin
-   </td>
-   <td>Usage
-   </td>
-  </tr>
-  <tr>
-   <td>b1
-   </td>
-   <td>3V3
-   </td>
-   <td>3.3 volt positive supply for the sensors
-   </td>
-  </tr>
-  <tr>
-   <td>b2
-   </td>
-   <td>GND
-   </td>
-   <td>Ground or negative supply to the sensors.
-   </td>
-  </tr>
-  <tr>
-   <td>b15
-   </td>
-   <td>D23
-   </td>
-   <td>Digital communication with the DHT22
-   </td>
-  </tr>
-  <tr>
-   <td>j11
-   </td>
-   <td>D34
-   </td>
-   <td>Analog voltage input from the solid moisture sensor. Also called ADC6.
-   </td>
-  </tr>
-  <tr>
-   <td>j12
-   </td>
-   <td>D35
-   </td>
-   <td>Analog input from the solar cell. Also called ADC 7.
-   </td>
-  </tr>
-</table>
-
-
-
+| Location    | Pin    | Usage                                                                       |
+|--------------|---------|------------------------------------------------------------------------------|
+| b1          | 3V3    | 3\.3 volt positive supply for the sensors                                   |
+| b2          | GND    | Ground or negative supply to the sensors\.                                  |
+| b15         | D23    | Digital communication with the DHT22                                        |
+| j11         | D34    | Analog voltage input from the solid moisture sensor\. Also called ADC6\.    |
+| j12         | D35    | Analog input from the solar cell\. Also called ADC 7\.                      |
 
 <p id="gdcalert40" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image40.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert41">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
