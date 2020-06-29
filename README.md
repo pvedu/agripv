@@ -687,7 +687,7 @@ Change to **115200 baud** in the Serial Monitor.
 
 
 
-![alt_text](images/image59.png "image_tooltip")
+![alt_text](images/image8.png "image_tooltip")
 
 
  The screen should show:
@@ -727,7 +727,7 @@ Install the following two libraries. They can take a while to find as there is a
 
 
 
-![alt_text](images/image60.png "image_tooltip")
+![alt_text](images/image10.png "image_tooltip")
 
 
 
@@ -735,7 +735,7 @@ Install the following two libraries. They can take a while to find as there is a
 
 
 
-![alt_text](images/image61.png "image_tooltip")
+![alt_text](images/image46.png "image_tooltip")
 
 
 After uploading the code to the ESP32 the blue light should flash quickly for a few seconds and then flash about once per second as a measurement is taken.
@@ -859,7 +859,7 @@ Eventually it should display:
 
 
 
-![alt_text](images/image63.png "image_tooltip")
+![alt_text](images/image4.png "image_tooltip")
 
 
 And it should also display on the link:
@@ -885,7 +885,7 @@ The ESP32 measures voltage not current. However, soldering a resistor across the
 
 
 
-![alt_text](images/image64.png "image_tooltip")
+![alt_text](images/image14.png "image_tooltip")
 
 
 [Figure 12](#figur_sensor_cell)_: IV curves of a solar cell under varying light intensity. A 10 ohm resistor converts the current to a voltage for the ESP32._
@@ -910,7 +910,7 @@ After a minute or so you should see:
 
 
 
-![alt_text](images/image65.png "image_tooltip")
+![alt_text](images/image30.png "image_tooltip")
 
 
 Select the link **clearsky_phoenix_today.ipynb**
@@ -952,13 +952,13 @@ Once you have everything tested and running we need to seal it from the environm
 
 
 
-![alt_text](images/image66.jpg "image_tooltip")
+![alt_text](images/image49.jpg "image_tooltip")
 
 
 
 
 
-![alt_text](images/image67.jpg "image_tooltip")
+![alt_text](images/image47.jpg "image_tooltip")
 
 
 [Figure 13](#figur_sealh)_ Spread out the connectors on the humidity sensor so they are not touching. Bend the extra pin out of the way and then cover the connectors with hot glue. Finally, wrap the connectors with electrical tape. Start wrapping the electrical tape from the cable, go up to the connectors and back down again._
@@ -968,13 +968,13 @@ Once you have everything tested and running we need to seal it from the environm
 
 
 
-![alt_text](images/image68.jpg "image_tooltip")
+![alt_text](images/image11.jpg "image_tooltip")
 
 
 
 
 
-![alt_text](images/image69.jpg "image_tooltip")
+![alt_text](images/image61.jpg "image_tooltip")
 
 
 [Figure 14](#figur_sealsoil)_: For the soil moisture sensor, cover the exposed electrical connectors on the red part with hot glue. Then wrap everything in electrical tape._
@@ -984,13 +984,13 @@ Once you have everything tested and running we need to seal it from the environm
 
 
 
-![alt_text](images/image70.jpg "image_tooltip")
+![alt_text](images/image5.jpg "image_tooltip")
 
 
 
 
 
-![alt_text](images/image71.jpg "image_tooltip")
+![alt_text](images/image36.jpg "image_tooltip")
 
 
 [Figure 15](#figur_sealcell)_: Similarly for the solar cell, cover the exposed parts with hot glue and layers of electrical tape. Just put layers across the back of the cell so there is no coverage on the active front._
