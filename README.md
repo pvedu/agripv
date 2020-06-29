@@ -292,14 +292,14 @@ The next step is a bit tricky.
 
 
 
-![alt_text](images/image30.png "image_tooltip")
+![alt_text](images/image1.png "image_tooltip")
  appears, hold down the BOOT button on the ESP32 for a few seconds until a lot of text appears.
 *   When it is finished uploading the message 
 
 
 
 
-![alt_text](images/image31.png "image_tooltip")
+![alt_text](images/image48.png "image_tooltip")
 appears and there is a blue flashing light on the ESP32.
 
     
@@ -381,11 +381,6 @@ Solder the ends of the wires to the holes in the PCB from the bottom of the boar
 #### Resistor For DHT22 {#resistor-for-dht22}
 
 There is a 10k resistor with the DHT22. Bend the legs of the resistor over and insert it at the location indicated in [figure 1](#fig_wiring). Solder from the bottom the same way as with a wire. Then snip off the excess leads.
-
-
-
-
-
 
 ![alt_text](images/image25.png "image_tooltip")
 
@@ -469,14 +464,50 @@ Strip off about 1.5 cm of outer covering from one end of a 2.5 ft length of cabl
 
 
 
-![alt_text](images/image41.jpg "image_tooltip")
+![alt_text](images/image51.jpg "image_tooltip")
 
 
 
 
 
-![alt_text](images/image42.jpg "image_tooltip")
+![alt_text](images/image44.jpg "image_tooltip")
 
+
+
+
+
+
+
+![alt_text](images/image52.jpg "image_tooltip")
+
+
+
+
+
+![alt_text](images/image29.jpg "image_tooltip")
+
+
+[Figure 7](#figur_cablestrip)_: Strip in the end of the cable and soldering (tinning) the ends._
+
+Clamp the wires and the DHT22 so they don't move. It is easier to line up one wire at a time, solder it, and then move on to the next wire. Fold back pin 3 so it is out of the way. Spread out the remaining pins so that they don't touch each other.
+
+
+
+
+
+
+![alt_text](images/image18.jpg "image_tooltip")
+
+
+
+
+
+![alt_text](images/image42.png "image_tooltip")
+
+
+[Figure 8](#figur_dht22solder)_: Soldering to the DHT22 with wire order: red, black, skip, silver._
+
+The other end of the cable goes into the terminal block. As before, strip off 1.5 mm of covering and remove the foil. Strip off 5 mm (about ⅓ of the exposed) of the red wire and about 7 mm (about a half) of the black wire. Twist the strands of each wire together as tightly as possible.  Fashion a 'pitchfork' as in the figure below where the black wire is in the center. Trim a few mm of the end of the black wire so they are all about the same length.
 
 
 
@@ -489,49 +520,13 @@ Strip off about 1.5 cm of outer covering from one end of a 2.5 ft length of cabl
 
 
 
-![alt_text](images/image44.jpg "image_tooltip")
-
-
-[Figure 7](#figur_cablestrip)_: Strip in the end of the cable and soldering (tinning) the ends._
-
-Clamp the wires and the DHT22 so they don't move. It is easier to line up one wire at a time, solder it, and then move on to the next wire. Fold back pin 3 so it is out of the way. Spread out the remaining pins so that they don't touch each other.
+![alt_text](images/image41.jpg "image_tooltip")
 
 
 
 
 
-
-![alt_text](images/image45.jpg "image_tooltip")
-
-
-
-
-
-![alt_text](images/image46.png "image_tooltip")
-
-
-[Figure 8](#figur_dht22solder)_: Soldering to the DHT22 with wire order: red, black, skip, silver._
-
-The other end of the cable goes into the terminal block. As before, strip off 1.5 mm of covering and remove the foil. Strip off 5 mm (about ⅓ of the exposed) of the red wire and about 7 mm (about a half) of the black wire. Twist the strands of each wire together as tightly as possible.  Fashion a 'pitchfork' as in the figure below where the black wire is in the center. Trim a few mm of the end of the black wire so they are all about the same length.
-
-
-
-
-
-
-![alt_text](images/image47.jpg "image_tooltip")
-
-
-
-
-
-![alt_text](images/image48.jpg "image_tooltip")
-
-
-
-
-
-![alt_text](images/image49.jpg "image_tooltip")
+![alt_text](images/image21.jpg "image_tooltip")
 
 
 [Figure 9](#figur_terminal)_: Flare the ends of the wire so they are easier to twist. Line up the ends of the pitchfork by trimming the end of the black wire slightly. Make sure there are no stray wire strands coming out of the block._
@@ -548,13 +543,13 @@ Use the longer 5 ft cable. Similarly to the previous sensor, strip off 1.5 cm of
 
 
 
-![alt_text](images/image50.jpg "image_tooltip")
+![alt_text](images/image9.jpg "image_tooltip")
 
 
 
 
 
-![alt_text](images/image51.jpg "image_tooltip")
+![alt_text](images/image38.jpg "image_tooltip")
 
 
 [Figure 10](#figur_soil)_: Right: Insert wires into the soil monitor in the order shown and solder. _
@@ -571,7 +566,7 @@ The solar sensor only uses two wires. Strip the wires as above but cut off the s
 
 
 
-![alt_text](images/image52.jpg "image_tooltip")
+![alt_text](images/image15.jpg "image_tooltip")
 
 
 [Figure 11](#figur_cell)_: Soldering the wires to the solar cell. The red wire goes to the plus ⊕ terminal and black to the 'negative' ⊖._
@@ -595,7 +590,7 @@ add details about the sensors etc. It confusing if it is mixed up with the assem
 
 
 
-![alt_text](images/image53.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
 
 
 
@@ -647,28 +642,28 @@ There are multiple ways to transfer code from the Google Drive to the Arduino ID
 
 
 
-![alt_text](images/image55.png "image_tooltip")
+![alt_text](images/image26.png "image_tooltip")
  to verify/compile the code. Since **upload **complies and uploads this step can be skipped. 
 *   Click on the 
 
 
 
 
-![alt_text](images/image56.png "image_tooltip")
+![alt_text](images/image17.png "image_tooltip")
  to upload the code to the ESP32. It will say compiling for a few seconds.
 *   When the message 
 
 
 
 
-![alt_text](images/image57.png "image_tooltip")
+![alt_text](images/image1.png "image_tooltip")
  appears, hold down the BOOT button on the ESP32 for a few seconds until a lot of text appears.
 *   When it is finished uploading the message 
 
 
 
 
-![alt_text](images/image58.png "image_tooltip")
+![alt_text](images/image48.png "image_tooltip")
 appears and the program will run on the ESP32.
 *   What happens next depends on the code and there is a description in the text below.
 *   Sometimes you may have to press EN (enable) on the ESP32 to restart the program and see messages at startup.
