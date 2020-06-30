@@ -366,22 +366,10 @@ There are multiple ways to transfer code from the Google Drive to the Arduino ID
 ### Upload to ESP32 
 
 *   Load the code into Arduino IDE
-*   Click 
-
-![alt_text](images/image26.png "image_tooltip")
- to verify/compile the code. Since **upload** complies and uploads this step can be skipped. 
-*   Click on the 
-
-![alt_text](images/image17.png "image_tooltip")
- to upload the code to the ESP32. It will say compiling for a few seconds.
-*   When the message 
-
-![alt_text](images/image1.png "image_tooltip")
- appears, hold down the BOOT button on the ESP32 for a few seconds until a lot of text appears.
-*   When it is finished uploading the message 
-
-![alt_text](images/image48.png "image_tooltip")
-appears and the program will run on the ESP32.
+*   Click ![alt_text](images/image26.png "image_tooltip") to verify/compile the code. Since **upload** complies and uploads this step can be skipped. 
+*   Click on the ![alt_text](images/image17.png "image_tooltip") to upload the code to the ESP32. It will say compiling for a few seconds.
+*   When the message ![alt_text](images/image1.png "image_tooltip") appears, hold down the BOOT button on the ESP32 for a few seconds until a lot of text appears.
+*   When it is finished uploading the message ![alt_text](images/image48.png "image_tooltip") appears and the program will run on the ESP32.
 *   What happens next depends on the code and there is a description in the text below.
 *   Sometimes you may have to press EN (enable) on the ESP32 to restart the program and see messages at startup.
 
