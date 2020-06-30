@@ -421,11 +421,9 @@ After uploading the code to the ESP32 the blue light should flash quickly for a 
 
 The Serial Monitor should repeatedly display:
 
-    **Humidity: 40.20%  Temperature: 26.80°C 80.24°F  Heat index: 26.73°C 80.11°F**
-
-    **Soil Moisture = 0**
-
-    **Light = 53**
+    Humidity: 40.20%  Temperature: 26.80°C 80.24°F  Heat index: 26.73°C 80.11°F
+    Soil Moisture = 0
+    Light = 53
 
 ### ESP_WiFi_Sensors 
 
