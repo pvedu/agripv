@@ -175,8 +175,7 @@ The next step is a bit tricky.
 
 ![alt_text](images/image34.png "image_tooltip")
 
-#### 
-    Further Programming 
+#### Further Programming 
 
 Try changing the blink code. For instance, change the line delay(1000) to delay(200). The first instance of delay determines the on-time and the second instance determines the off-time.
 
