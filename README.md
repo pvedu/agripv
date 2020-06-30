@@ -168,20 +168,9 @@ To test the communications link, we write and upload a simple program that makes
 
 The next step is a bit tricky.
 
-*   Click on the 
-
-![alt_text](images/image17.png "image_tooltip")
- to upload the code to the ESP32. It will say compiling for a few seconds.
-*   When the message 
-
-![alt_text](images/image1.png "image_tooltip")
- appears, hold down the BOOT button on the ESP32 for a few seconds until a lot of text appears.
-*   When it is finished uploading the message 
-
-![alt_text](images/image48.png "image_tooltip")
-appears and there is a blue flashing light on the ESP32.
-
-    
+*   Click on the ![alt_text](images/image17.png "image_tooltip") to upload the code to the ESP32. It will say compiling for a few seconds.
+*   When the message ![alt_text](images/image1.png "image_tooltip") appears, hold down the BOOT button on the ESP32 for a few seconds until a lot of text appears.
+*   When it is finished uploading the message ![alt_text](images/image48.png "image_tooltip")appears and there is a blue flashing light on the ESP32.
 
 ![alt_text](images/image34.png "image_tooltip")
 
