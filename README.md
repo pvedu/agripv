@@ -309,9 +309,7 @@ Use the longer 5 ft cable. Similarly to the previous sensor, strip off 1.5 cm of
 
 ![alt_text](images/image38.jpg "image_tooltip")
 
-[Figure 10](#figur_soil)_: Right: Insert wires into the soil monitor in the order shown and solder. _
-
-_Left: Follow the instructions for the DHT22 to connect the other end of the cable to the terminal block.  The picture shows the PCB inserted in the case. _
+_[Figure 10](#figur_soil)_: Right: Insert wires into the soil monitor in the order shown and solder. Left: Follow the instructions for the DHT22 to connect the other end of the cable to the terminal block.  The picture shows the PCB inserted in the case. _
 
 ### Solar Sensor Cell 
 
