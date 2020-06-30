@@ -15,7 +15,7 @@ Steps are:
 *   Attach the sensors.
 *   Write the programs.
 
-![alt_text](images/image1.jpg "image_tooltip")
+![alt_text](images/image7.jpg "image_tooltip")
 
 ## Materials
 
@@ -56,14 +56,15 @@ Most connections are soldered as it is much more reliable than using a prototypi
 *   You need one hand for the solder and one for the iron, secure everything and then solder.
 *   Apply the iron to the joint for 1-2 seconds then apply the solder to the joint, not the iron. 
 *   Let everything cool (solidify) before moving on.
+*   Coat the tip with solder before turning it off.
 
-## Programming Environment {#programming-environment}
+## Programming Environment 
 
 We use the C/C++  language in the Arduino IDE to write code to tell the ESP32 how and when to take measurements and what to do with the data. The **C/C++** language produces fast code with a small size, so it uses less storage space and is ideal for microcontrollers. It is popular, so there is lots of code already out there. We can download a library to talk to the sensors without having to write it all ourselves. It is hard to learn, but you won't need to do much actual programming. Just compile and upload.
 
 An **IDE** (integrated development environment) integrates several functions. It provides the editor where we write the actual code and format it, so it is easier to read. It manages libraries (pre-written code) to include with our code in the right way. The IDE compiles (translates) C/C++ into machine code instructions for the ESP32 and finally uploads (transfers) the machine code to the ESP32. There are many IDEs, but we use the **Arduino IDE** as it is free and simpler to install. The default language is C/C++
 
-### Installing the Arduino IDE {#installing-the-arduino-ide}
+### Installing the Arduino IDE 
 
 The security settings are the greatest challenge to installing the Arduino IDE and especially the libraries. There are workarounds, but it is easier if you have administrator access.
 
@@ -82,7 +83,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 
 ![alt_text](images/image33.png "image_tooltip")
 
-*   Click **Close **when the install is complete.
+*   Click **Close** when the install is complete.
 *   Open Arduino application.
 *   At the **Windows Security Alert**, check allow** Private and Private**, and then **Allow Access**.
 
@@ -94,7 +95,7 @@ These instructions are based on: [https://randomnerdtutorials.com/installing-the
 
 The Arduino IDE is now installed, and we now add the code libraries for talking to the ESP32.
 
-*   Copy the following line to the clipboard by selecting it then ctrl-C
+*   Copy the following line to the clipboard by selecting it, then ctrl-C.
 
 ```
 https://dl.espressif.com/dl/package_esp32_index.json
@@ -105,7 +106,7 @@ https://dl.espressif.com/dl/package_esp32_index.json
 
 ![alt_text](images/image55.png "image_tooltip")
 
-*   Click **Tools** → **Board **→  **Boards Manager**.
+*   Click **Tools** → **Board** → **Boards Manager**.
 
 ![alt_text](images/image50.png "image_tooltip")
 
@@ -116,13 +117,13 @@ https://dl.espressif.com/dl/package_esp32_index.json
 *   Wait a couple of minutes, then select **Close**.
 *   Click **Tools** → **Boards Manager** and select **Esp Dev Module**
 
-#### Testing the Installation {#testing-the-installation}
+#### Testing the Installation 
 
 The software installation is now complete. To test it we connect to the ESP32, either by itself or in the PCB. Remove the ESP32 from the packaging, including the white foam and place it on a piece of paper.  Do not let the ESP32 come in contact with metal as it will short out the pins. It is also static sensitive so don't handle it too much or put it on plastic.
 
 *   Plug one end of the USB cable into the computer and the other end (microUSB like an Android phone) into the ESP32. Plug in either end first.
 *   A red light should come on in the ESP32.
-*   In the Arduino IDE select the Com port E.g. **Tools **→ **port **→ **COM5**. Your system will likely have a different number. It will also change if you change USB port so use the same USB port each time.
+*   In the Arduino IDE select the Com port E.g. **Tools** → **port** → **COM5**. Your system will likely have a different number. It will also change if you change USB port so use the same USB port each time.
 *   On a Mac or Linux the serial port starts with /dev
 *   The **Tools** menu should look something like this:
 
@@ -161,7 +162,7 @@ To test the communications link, we write and upload a simple program that makes
     }
     ```
 
-*   Click **File **→ **Save **and give it the filename of ESPblink
+*   Click **File** → **Save** and give it the filename of ESPblink
 *   Select the tick ![alt_text](images/image26.png "image_tooltip"). The compiler will check the code for errors and convert the C code to machine code. Completion results in the message "Done Uploading" and the black message area should look like below.
 
 ![alt_text](images/image19.png "image_tooltip")
@@ -175,13 +176,13 @@ The next step is a bit tricky.
 ![alt_text](images/image34.png "image_tooltip")
 
 #### 
-    Further Programming {#further-programming}
+    Further Programming 
 
 Try changing the blink code. For instance, change the line delay(1000) to delay(200). The first instance of delay determines the on-time and the second instance determines the off-time.
 
-    The setup of the Arduino IDE is now complete. The programming section below includes code to interact with the sensors, but first we need to assemble the hardware.
+The setup of the Arduino IDE is now complete. The programming section below includes code to interact with the sensors, but first we need to assemble the hardware.
 
-## Assembling the Board {#assembling-the-board}
+## Assembling the Board 
 
 To have the sensors talk to the microcontroller, we need to connect specific pins to specific wires on the sensors. In the schematic below, the heavy color lines are the wires. There are wires inside the board (called tracks) that are shown in the schematic but are not visible in the actual board. The wires under the ESP32 are bad practice but was the only way to get everything to fit.
 
@@ -197,9 +198,9 @@ At the moment, the ESP32 is powered by the USB connection. A regulator inside th
 
 For the assembly of the board, start with the wires, then do the terminal blocks, and finally the microcontroller. The two sides of the board are similar, so make sure you use the convention in the figures above. The top is as pictured in [figure 1](#fig_wiring) above. The numbers are the right way up, the "CS" is at the top and the "CircuitSetup.us…" label is on the right-hand side. The wires and components all go on the top of the board and connections soldered from the bottom.
 
-### Components {#components}
+### Components 
 
-#### Wires {#wires}
+#### Wires 
 
 Cut lengths of wire slightly longer than shown above. Remove 3 - 5 mm of insulation from each end of the wire. Bend the ends of the wires over and poke through the correct holes in the PCB.
 
@@ -213,7 +214,7 @@ Solder the ends of the wires to the holes in the PCB from the bottom of the boar
 
 ![alt_text](images/image36.jpg "image_tooltip")
 
-#### Resistor For DHT22 {#resistor-for-dht22}
+#### Resistor For DHT22 
 
 There is a 10k resistor with the DHT22. Bend the legs of the resistor over and insert it at the location indicated in [figure 1](#fig_wiring). Solder from the bottom the same way as with a wire. Then snip off the excess leads.
 
@@ -223,7 +224,7 @@ There is a 10k resistor with the DHT22. Bend the legs of the resistor over and i
 
 [Figure 4](#figur_10kresistor)_: The colors show it is a 10k resistor. Snip off the excess leads after soldering into the board._
 
-#### Terminal Blocks. {#terminal-blocks}
+#### Terminal Blocks. 
 
 The terminal blocks go in the locations indicated. Looking from the bottom, each pin of the terminal block should be on the same horizontal line of holes as a wire termination.
 
@@ -235,7 +236,7 @@ The terminal blocks go in the locations indicated. Looking from the bottom, each
 
 #### Testing the electrical connections
 
-#### ESP32 board. {#esp32-board}
+#### ESP32 board. 
 
 The ESP32 board is the hardest to solder, so we do it at the end. For now, just solder the 5 pins shown in Table 2 below.
 
@@ -253,13 +254,13 @@ _Table 2: Pins in use on the ESP32_
 
 [Figure 6](#figur_finishedboard)_: Finished board front and &lt;insert picture of back>_
 
-### Testing the board {#testing-the-board}
+### Testing the board 
 
 Check over the board once again and make sure all everything is in the right location, and there are no solder bridges. Use a microscope or magnifying glass if available.
 
 Briefly plug-in the ESP32 to USB power. The red light should come on. If it looks dim, then unplug the board immediately.
 
-## Wiring up the sensors {#wiring-up-the-sensors}
+## Wiring up the sensors 
 
 The sensors are at the end of long cables so we can position them in the field. There is ~10ft of cable, and we need three cables for the sensors. Cut the 10 ft cable in half, so you have two 5 ft cables. Then cut ONE of the cables in half to give two 2.5 ft cables. This will result in:
 
@@ -267,7 +268,7 @@ The sensors are at the end of long cables so we can position them in the field. 
 *   2.5 ft cable for the solar sensor
 *   2.5 ft cable for the DHT22
 
-### DHT22 sensor and cable {#dht22-sensor-and-cable}
+### DHT22 sensor and cable 
 
 Strip off about 1.5 cm of outer covering from one end of a 2.5 ft length of cable. Tear off the foil covering or cut it with scissors. Strip ~ 5 mm of the red and black wire. Tin the ends of the wire with solder.
 
@@ -279,7 +280,7 @@ Strip off about 1.5 cm of outer covering from one end of a 2.5 ft length of cabl
 
 ![alt_text](images/image29.jpg "image_tooltip")
 
-[Figure 7](#figur_cablestrip)_: Strip in the end of the cable and soldering (tinning) the ends._
+_[Figure 7](#figur_cablestrip): Strip in the end of the cable and soldering (tinning) the ends._
 
 Clamp the wires and the DHT22 so they don't move. It is easier to line up one wire at a time, solder it, and then move on to the next wire. Fold back pin 3 so it is out of the way. Spread out the remaining pins so that they don't touch each other.
 
@@ -287,7 +288,7 @@ Clamp the wires and the DHT22 so they don't move. It is easier to line up one wi
 
 ![alt_text](images/image42.png "image_tooltip")
 
-[Figure 8](#figur_dht22solder)_: Soldering to the DHT22 with wire order: red, black, skip, silver._
+_[Figure 8](#figur_dht22solder): Soldering to the DHT22 with wire order: red, black, skip, silver._
 
 The other end of the cable goes into the terminal block. As before, strip off 1.5 mm of covering and remove the foil. Strip off 5 mm (about ⅓ of the exposed) of the red wire and about 7 mm (about a half) of the black wire. Twist the strands of each wire together as tightly as possible.  Fashion a 'pitchfork' as in the figure below where the black wire is in the center. Trim a few mm of the end of the black wire so they are all about the same length.
 
@@ -301,7 +302,7 @@ The other end of the cable goes into the terminal block. As before, strip off 1.
 
 Unscrew the screws in the terminal block. Referring to [figure 1](#fig_wiring), insert the three wires into the terminal block. It is slightly easier to insert the middle black wire first and then the other two wires. Slightly tug on the wires to make sure they are secure. Getting all the wires in the terminal block is challenging.
 
-### Soil Monitor {#soil-monitor}
+### Soil Monitor 
 
 Use the longer 5 ft cable. Similarly to the previous sensor, strip off 1.5 cm of outer cable and 5 mm from the ends of the red and black. Insert the wires into the soil monitor and solder. Connect Red to VCC, black to SGN, and the silver wire to GND.
 
@@ -313,7 +314,7 @@ Use the longer 5 ft cable. Similarly to the previous sensor, strip off 1.5 cm of
 
 _Left: Follow the instructions for the DHT22 to connect the other end of the cable to the terminal block.  The picture shows the PCB inserted in the case. _
 
-### Solar Sensor Cell {#solar-sensor-cell}
+### Solar Sensor Cell 
 
 The solar sensor only uses two wires. Strip the wires as above but cut off the silver wire at both ends completely. Attach one end to the solar cell as in the figure below. 
 
@@ -323,13 +324,13 @@ The solar sensor only uses two wires. Strip the wires as above but cut off the s
 
 Insert the red and black wires into the terminal block as in [figure 1](#fig_wiring). Cut off the silver wire. 
 
-### Finishing up {#finishing-up}
+### Finishing up 
 
 Test the system in the software section below. It is easier to debug when the board is out of the box.
 
 The PCB goes in the case so the USB port lines up with the square-ish hole. The cables to the sensors go in the notches at the other end. The top just snaps on and should squash down on the cables so they don't pull out of the terminals. If the lid won't go all the way down either cut out the notches or wrap electrical tape around the whole box.
 
-## Technical Details of the System {#technical-details-of-the-system}
+## Technical Details of the System 
 
 add details about the sensors etc. It confusing if it is mixed up with the assembly.
 
@@ -337,25 +338,25 @@ add details about the sensors etc. It confusing if it is mixed up with the assem
 
 ![alt_text](images/image54.jpg "image_tooltip")
 
-_Left: A clearer picture of the in the board. Zoom in to see the wires_._ Right: Our configuration of the ESP32 with the pins labeled._
+_Left: A clearer picture of the in the board. Zoom in to see the wires. Right: Our configuration of the ESP32 with the pins labeled._
 
-#### Aside: Microcontroller vs Microcomputer {#aside-microcontroller-vs-microcomputer}
+#### Aside: Microcontroller vs Microcomputer 
 
-A **microcontroller **does a small number of specific tasks reliably. They do not multitask, so changing the application requires reprogramming. They are 'real-time' and commands happen on-time and without delay. The ESP32, Arduino, and the controller in your microwave oven are all examples of microcontrollers.
+A **microcontroller** does a small number of specific tasks reliably. They do not multitask, so changing the application requires reprogramming. They are 'real-time' and commands happen on-time and without delay. The ESP32, Arduino, and the controller in your microwave oven are all examples of microcontrollers.
 
-A **microcomputer **can run lots of different tasks (multitask) simultaneously and the user can easily switch from one task to another. They do not operate in 'real-time,' so a task may be delayed a couple of seconds. These delays are annoying for a computer user but would be catastrophic when controlling a nuclear power plant. A Raspberry Pi, iPhone, Windows PC are all examples of microcomputers.
+A **microcomputer** can run lots of different tasks (multitask) simultaneously and the user can easily switch from one task to another. They do not operate in 'real-time,' so a task may be delayed a couple of seconds. These delays are annoying for a computer user but would be catastrophic when controlling a nuclear power plant. A Raspberry Pi, iPhone, Windows PC are all examples of microcomputers.
 
 Microcontrollers and microcomputers often work together.
 
-#### Aside: Programming Languages. {#aside-programming-languages}
+#### Aside: Programming Languages. 
 
 There are so many programming languages because computers are used in so many different ways. Some programming languages are suited to making user interfaces while others are better for programming microcontrollers. There are many tradeoffs between the languages: how fast the program runs, speed of programming, security, portability (does it run on different types of computers).
 
-## Programming {#programming}
+## Programming 
 
 The google drive has programs to test each sensor in the folder: **Agrivoltaic Research Program Materials/Program Code/Arduino**. The code needs to be downloaded, compiled, and uploaded to the ESP32. 
 
-### Transfer from Google Drive to Arduino IDE {#transfer-from-google-drive-to-arduino-ide}
+### Transfer from Google Drive to Arduino IDE 
 
 There are multiple ways to transfer code from the Google Drive to the Arduino IDE. Here is one way:
 
@@ -363,13 +364,13 @@ There are multiple ways to transfer code from the Google Drive to the Arduino ID
 *   Unzip the Arduino folder.
 *   Move the folder **ESP_Soil_monitor** to your Arduino folder. Typically, this is **Documents/Arduino**
 
-### Upload to ESP32 {#upload-to-esp32}
+### Upload to ESP32 
 
 *   Load the code into Arduino IDE
 *   Click 
 
 ![alt_text](images/image26.png "image_tooltip")
- to verify/compile the code. Since **upload **complies and uploads this step can be skipped. 
+ to verify/compile the code. Since **upload** complies and uploads this step can be skipped. 
 *   Click on the 
 
 ![alt_text](images/image17.png "image_tooltip")
@@ -385,15 +386,15 @@ appears and the program will run on the ESP32.
 *   What happens next depends on the code and there is a description in the text below.
 *   Sometimes you may have to press EN (enable) on the ESP32 to restart the program and see messages at startup.
 
-### ESP_Blink {#esp_blink}
+### ESP_Blink 
 
 The ESP_Blink code is the same code that Arduino IDE used as an example and will just flash the blue LED. Use Esp_blink to make sure that you can still upload code, and especially if you have problems with more advanced code.
 
-### ESP_Soil_Monitor {#esp_soil_monitor}
+### ESP_Soil_Monitor 
 
 Upload the code to the ESP32. Upon pressing **BOOT**, the blue LED should flash rapidly for a few seconds. It will then flash once a second as it does each measurement.
 
-Open the serial monitor with **Ctrl-Shift-M** or **Tools **→  **Serial monitor**.
+Open the serial monitor with **Ctrl-Shift-M** or **Tools** →  **Serial monitor**.
 
 Change to **115200 baud** in the Serial Monitor.
 
@@ -407,7 +408,7 @@ Soil Moisture = 0
 
 Hold the two probes in your hands and the numbers should increase to 3000 or so.
 
-### ESP_Light {#esp_light}
+### ESP_Light 
 
 After uploading to the ESP32, the blue light should blink for a few seconds. The Serial Monitor should show something like:
 
@@ -417,11 +418,11 @@ After uploading to the ESP32, the blue light should blink for a few seconds. The
 
 Shine a very bright light on the solar sensor and the numbers should increase.
 
-### ESP_Sensors {#esp_sensors}
+### ESP_Sensors 
 
 The DHT22 needs two extra libraries installed:
 
-In the Arduino IDE go to **Tools **→ **Manage libraries**.
+In the Arduino IDE go to **Tools** → **Manage libraries**.
 
 Install the following two libraries. They can take a while to find as there is a large list to scroll down, even with the search string.
 
@@ -439,7 +440,7 @@ The Serial Monitor should repeatedly display:
 
     **Light = 53**
 
-### ESP_WiFi_Sensors {#esp_wifi_sensors}
+### ESP_WiFi_Sensors 
 
 This code starts a small web server that measures and displays the sensor readings every time the page is viewed. It needs a connection to a Wifi network to function.
 
@@ -504,7 +505,9 @@ As above, Change to match your WiFi network and keep the quotes. E.g.:
 
 Change the code word on line:
 
-	**<code>String code_word = "ASU";</code></strong>
+```	
+	String code_word = "ASU";
+```
 
 Use exactly the same capitalization as in the table above.
 
@@ -544,7 +547,7 @@ The ESP32 measures voltage not current. However, soldering a resistor across the
 
 ![alt_text](images/image14.png "image_tooltip")
 
-[Figure 12](#figur_sensor_cell)_: IV curves of a solar cell under varying light intensity. A 10 ohm resistor converts the current to a voltage for the ESP32._
+_[Figure 12](#figur_sensor_cell): IV curves of a solar cell under varying light intensity. A 10 ohm resistor converts the current to a voltage for the ESP32._
 
 The figure above shows a 1 cm² solar cell under varying light intensity. The Isc is 0.038A (38 mA) at one sun and the voltage across the resistor is 0.38 V. At 0.4 suns, Isc is 0.4*0.38 = 0.0152A and the voltage is 0.152 V.
 
@@ -564,7 +567,7 @@ After a minute or so you should see:
 
 Select the link **clearsky_phoenix_today.ipynb**
 
-Select menu item** Cells → Run All**
+Select menu item **Cells → Run All**
 
 The rest of the instructions are in the notebook itself. 
 
@@ -586,7 +589,7 @@ Sunlight intensity: 0.864 suns
 
 Light counts: 428. 
 
-Calibration factor: 428/0.864 =** 495 counts/sun**
+Calibration factor: 428/0.864 = **495 counts/sun**
 
 So divide future readings by 495 to convert to suns. Enter the value into LightCalibration on the **ESP_dweet** code.
 
@@ -622,7 +625,7 @@ Keep the box in the shade and away from moisture. The sensor needs to connect to
 
 The soil sensor can get wet but keep the humidity and light sensor away from moisture.
 
-## Troubleshooting {#troubleshooting}
+## Troubleshooting 
 
 Is the red power light on? If it is, it means that there is power to the device and there is not a short from the 3V3 pin to ground. If the red-light is off, then either the USB power is not giving power or there is a short to ground. 
 
@@ -664,11 +667,11 @@ It will do it when uploading a program but should not do it at other times.
 
 Remove the red wire in the top left-hand corner of [figure 1](#fig_wiring).  You can either cut it or desolder. Cutting the wire cuts the power to the sensors. If there is a problem with board wiring, it will be isolated from the ESP32. Try the blink program again.
 
-#### Testing the Soil Moisture Sensor with a Voltmeter {#testing-the-soil-moisture-sensor-with-a-voltmeter}
+#### Testing the Soil Moisture Sensor with a Voltmeter 
 
 It is easier to test the soil sensor when connected to the terminal blocks. The voltage between the silver wire and the red wire should be 3.3 volts. The black SIG wire to the silver wire should be close to zero when disconnected and 1-2 volts when there is a conductor between the probes such as a wet hand.
 
-#### Testing the Solar Cell Sensor with a Voltmeter {#testing-the-solar-cell-sensor-with-a-voltmeter}
+#### Testing the Solar Cell Sensor with a Voltmeter 
 
 The sensor produces a voltage in proportion to the light intensity. It is easier to test when disconnected from the terminal blocks. It is designed for sunlight so it needs a very bright light. Put the voltmeter in the mV (200m) setting and bright light should make the voltage increase. 
 
