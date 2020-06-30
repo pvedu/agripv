@@ -432,37 +432,37 @@ This code starts a small web server that measures and displays the sensor readin
 Load the code into the Arduino IDE and look for the section:
 
 ```
-    const char* ssid = "YOUR_WIFI_SSID"; 
-    const char* password = "YOUR_WIFI_PASSWORD";
+const char* ssid = "YOUR_WIFI_SSID"; 
+const char* password = "YOUR_WIFI_PASSWORD";
 ```
 
 Change to match your WiFi network and keep the quotes. E.g.:
 
 ```
-    const char* ssid = "netgear"; 
-    const char* password = "password1";
+const char* ssid = "netgear"; 
+const char* password = "password1";
 ```
 
 After uploading the code to the ESP32, the blue LED flashes rapidly and then stops.  Open the Serial Monitor. If the screen is empty press the EN button to restart the ESP32. You should see something like:
 
 ```
-    rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
-    configsip: 0, SPIWP:0xee
-    clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
-    mode:DIO, clock div:1
-    load:0x3fff0018,len:4
-    load:0x3fff001c,len:1216
-    ho 0 tail 12 room 4
-    load:0x40078000,len:9720
-    ho 0 tail 12 room 4
-    load:0x40080400,len:6352
-    entry 0x400806b8
-    ESP_WIFI
-    Connecting to EAT
-    ..
-    WiFi connected.
-    IP address:
-    192.168.1.18
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0018,len:4
+load:0x3fff001c,len:1216
+ho 0 tail 12 room 4
+load:0x40078000,len:9720
+ho 0 tail 12 room 4
+load:0x40080400,len:6352
+entry 0x400806b8
+ESP_WIFI
+Connecting to EAT
+..
+WiFi connected.
+IP address:
+192.168.1.18
 ```
 
 Ignore the first lines as they are just ESP32 diagnostics that show each time it starts up. Copy the last line that consists of four numbers separated by periods, paste it into your browser, and press return. You should see something like:
@@ -484,14 +484,14 @@ Download **ESP_Dweet** to to Arduino IDE
 As above, Change to match your WiFi network and keep the quotes. E.g.:
 
 ```
-    const char* ssid = "netgear"; 
-    const char* password = "password1";
+const char* ssid = "netgear"; 
+const char* password = "password1";
 ```
 
 Change the code word on line:
 
 ```	
-	String code_word = "ASU";
+String code_word = "ASU";
 ```
 
 Use exactly the same capitalization as in the table above.
@@ -524,7 +524,7 @@ And it should also display on the link:
 
 As well as a power converter, solar cells can measure sunlight intensity. **Insolation **is the technical term for the solar irradiance and is measured in W/m². We also use suns as a convenience unit where:
 
-	1 sun = 1 kW/m².
+**1 sun = 1 kW/m².**
 
 The **short circuit current**, I<sub>SC</sub> of a solar cell is linear with light intensity, so that double the light intensity results in a doubling of Isc. 
 
@@ -623,11 +623,11 @@ Remove all the sensors from the terminal blocks, and upload ESP_Sensors.
 The blue light should flicker for a couple of seconds and then show the following:
 
 ```
-    Agrivoltaics
-    Failed to read from DHT sensor!
-    Humidity: nan%  Temperature: nan°C nan°F  Heat index: nan°C nan°F
-    Soil Moisture = 0
-    Light = 39
+Agrivoltaics
+Failed to read from DHT sensor!
+Humidity: nan%  Temperature: nan°C nan°F  Heat index: nan°C nan°F
+Soil Moisture = 0
+Light = 39
 ```
 
 The light number will be random.
@@ -635,17 +635,17 @@ The light number will be random.
 If you see the message over and over again it means the ESP32 is continuously restarting, also known as a boot loop.
 
 ```
-    rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
-    configsip: 0, SPIWP:0xee
-    clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
-    mode:DIO, clock div:1
-    load:0x3fff0018,len:4
-    load:0x3fff001c,len:1216
-    ho 0 tail 12 room 4
-    load:0x40078000,len:9720
-    ho 0 tail 12 room 4
-    load:0x40080400,len:6352
-    entry 0x400806b8
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0018,len:4
+load:0x3fff001c,len:1216
+ho 0 tail 12 room 4
+load:0x40078000,len:9720
+ho 0 tail 12 room 4
+load:0x40080400,len:6352
+entry 0x400806b8
 ```
 
 It will do it when uploading a program but should not do it at other times.
