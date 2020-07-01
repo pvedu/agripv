@@ -351,15 +351,15 @@ There are so many programming languages because computers are used in so many di
 
 ## Programming 
 
-The google drive has programs to test each sensor in the folder: **Agrivoltaic Research Program Materials/Program Code/Arduino**. The code needs to be downloaded, compiled, and uploaded to the ESP32. 
+Programs to test each sensor are on github. The code needs to be downloaded, compiled, and uploaded to the ESP32. 
 
-### Transfer from Google Drive to Arduino IDE 
+### Transfer from Github to Arduino
 
-There are multiple ways to transfer code from the Google Drive to the Arduino IDE. Here is one way:
-
-*   Right-click on the folder Arduino and select **Download**.
-*   Unzip the Arduino folder.
-*   Move the folder **ESP_Soil_monitor** to your Arduino folder. Typically, this is **Documents/Arduino**
+Its not that obvious how to download code from Github for use in the Arduino. Here is one way.
+* goto https://github.com/pvedu/agripv
+* Select the green Code button --> Download zip
+*   Unzip and drill down to the the Arduino folder.
+*   Move all the folders starting with **ESP_** to your Arduino folder. Typically, this is **Documents/Arduino**
 
 ### Upload to ESP32 
 
@@ -465,7 +465,7 @@ IP address:
 
 Ignore the first lines as they are just ESP32 diagnostics that show each time it starts up. Copy the last line that consists of four numbers separated by periods, paste it into your browser, and press return. You should see something like:
 
-![alt_text](images/image62.png "image_tooltip")
+![alt_text](images/image13.png "image_tooltip")
 
 For each page refresh (Ctrl-r) the ESP32 will take a new reading and display it on the website. The blue light also blinks.
 
@@ -489,10 +489,9 @@ const char* password = "password1";
 Change the code word on line:
 
 ```	
-String code_word = "ASU";
+String code_word = "code";
 ```
-
-Use exactly the same capitalization as in the table above.
+to something unique. It is public so don't use any of your passwords.
 
 Also, change your light sensor calibration if you know it. Otherwise leave it as 1.0
 
@@ -502,19 +501,15 @@ const float lightCalibration = 1.0;
 
 Upload to the ESP32 and open the serial monitor and check it it running. Eg:
 
-**GET /dweet/for/agripvASU?temperature=26.8&humidity=37.8&sun=0.00&moisture=0.00 HTTP/1.1**
+**GET /dweet/for/agripvcode?temperature=26.8&humidity=37.8&sun=0.00&moisture=0.00 HTTP/1.1**
 
 Check to see if the dweets are going to the web. Relace the ASU with your code word.
 
-**https://dweet.io/follow/agripvASU**
+**https://dweet.io/follow/agripvcode**
 
 Eventually it should display:
 
 ![alt_text](images/image4.png "image_tooltip")
-
-And it should also display on the link:
-
-[https://freeboard.io/board/iodACa](https://freeboard.io/board/iodACa)
 
 ## Finishing Off 
 
@@ -535,10 +530,8 @@ _[Figure 12](#figur_sensor_cell): IV curves of a solar cell under varying light 
 The figure above shows a 1 cm² solar cell under varying light intensity. The Isc is 0.038A (38 mA) at one sun and the voltage across the resistor is 0.38 V. At 0.4 suns, Isc is 0.4*0.38 = 0.0152A and the voltage is 0.152 V.
 
 Most solar cells work as sensors but need calibration with a light source of known light intensity that has similar brightness and spectrum (color) as the sun. Well calibrated light sources are expensive and it is easier to use the sun. Insolation is quite predictable on a clear sunny day.
-
+<!--
 ##### How bright is the sun?
-
-The light intensity for 2020-06-24 is on the Google Drive as **2020-06-24.xlsx**. The first column is the time and the second column is the light intensity on a horizontal surface in suns.
 
 There is also an online calculator at the link:
 
@@ -553,7 +546,7 @@ Select the link **clearsky_phoenix_today.ipynb**
 Select menu item **Cells → Run All**
 
 The rest of the instructions are in the notebook itself. 
-
+-->
 ##### Calibration
 
 Run the tester so that it is showing Light reading either directly on the screen via the serial monitor or via WiFi
